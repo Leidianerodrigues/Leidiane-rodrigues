@@ -1,0 +1,274 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="portfolio-head">
+        <div class="screen">
+            <h2>Portfólio</h2>
+        </div>
+        <div class="options">
+            <ul>
+                <li>Meus Serviços</li>
+                <li>Fale comigo</li>
+                <li>Portfólio</li>
+            </ul>
+        </div>
+    </div>
+    <div class="portfolio-body">
+        <div class="presentation">
+            <div class="name">
+                <h1>Olá, meu nome é Leidiane</h1>
+            </div>
+            <div class="profile-img">
+                <img src="img-perfil.jpg">
+            </div>
+            <div class="description">
+                <p>Sou programadora e gostaria de apresentar meu trabalho para você através deste portfólio</p>
+            </div>
+            <div class="btn-meus-servicos">
+                <button>Meus Serviços</button>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-foot">
+        <h1>Alguns dos meus Clientes</h1>
+        <i class="fab fa-apple icone"></i>
+        <i class="fab fa-slack icone"></i>
+        <i class="fab fa-spotify icone"></i>
+    </div>
+    <div class="my-services">
+        <h3>Conheça</h3>
+        <h1>Meus Serviços</h1>
+        <p>Vou ajudar sua empresa a alcançar grandes resultados</p>
+        <div class="ms-foot">
+            <div class="b1">
+                <div class="i i1">
+                    <i class="fas fa-briefcase briefcase-icon"></i>
+                </div>
+                <h2>Consultoria</h2>
+                <p>Te ajudo a organizar sua empresa e melhorar seus resultados</p>
+            </div>
+            <div class="b2">
+                <div class="i i2">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <h2>Email marketing</h2>
+                <p>Gerenciar campanhas é difícil. Conte comigo para te ajudar</p>
+            </div>
+            <div class="b3">
+                <div class="i i3">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h2>Criação de sites</h2>
+                <p>Desenvolvo seu site inteiro do zero e te entrego prontinho</p>
+            </div>
+            <div class="time">
+                <h3>Economize seu tempo</h3>
+                <h1>Ganhe mais dinheiro</h1>
+                <h2>Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito</h2>
+                <input type="email" placeholder="Seu e-mail aqui">
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="job">
+                <h3>Conheça meu trabalho</h3>
+                <h1>Portfolio</h1>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+css
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+*{
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f6e1e6;
+    color: #563b56;
+    text-align: center;
+}
+
+.portfolio-head {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 20px;
+}
+
+.options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.options ul li {
+    display: inline;
+    margin: 0 20px 20px 10px;
+}
+
+.options ul li:hover {
+    border: solid #fff 1px;
+    cursor: pointer;
+}
+
+.portfolio-body {
+    padding: 20px;
+    width: 1100px;
+    height: 300px;
+    margin: 10px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile-img {
+    margin-top: -170px;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+.profile-img img {
+    max-width: 200px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.name{
+    width: 270px;
+    float: right;
+    margin-right: 75.7%;
+    text-align: left;
+}
+
+.description {
+    width: auto;
+    margin-right: 50%;
+    margin-top: -200px;
+    text-align: left;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d53cb1;
+}
+
+.btn-meus-servicos{
+    margin-right: 50%;
+}
+
+.portfolio-foot {
+    background-color: #ff69b4;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-foot .icone{
+    font-size: 30px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.portfolio-foot h1 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: medium;
+}
+
+.ms-foot i{
+    margin-top: 23px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ms-foot .i{
+    align-items: center;
+    border-radius: 100%;
+    font-size: 30px;
+}
+
+.ms-foot .i1{
+    background-color: rgb(31, 124, 225);
+    width: 80px;
+    height: 80px;
+}
+
+.ms-foot .i2{
+    background-color: rgb(247, 92, 78);
+    width: 80px;
+    height: 80px;
+}
+
+.ms-foot .i3{
+    background-color: rgb(247, 149, 78);
+    width: 80px;
+    height: 80px;
+}
+
+.ms-foot .b1,.b2,.b3{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-foot .b2{
+    margin-left: 550px;
+    margin-top: -232px;
+}
+
+.ms-foot .b3{
+    display: flex;
+    float: right;
+    margin-top: -232px;
+}
+
+input{
+    border: none;
+    border-radius: 05%;
+    width: 200px;
+    height: 40px;
+}
+
+h3{
+    color: #F75C4E;
+}
+
+
+
